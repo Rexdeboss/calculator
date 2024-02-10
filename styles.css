@@ -4,11 +4,13 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-color: #f0f0f0; /* Add a background color */
 }
 
 .calculator {
   width: 90%;
-  max-width: 300px;
+  max-width: 400px; /* Adjust max-width as needed */
+  height: 90vh; /* Set height to 90% of viewport height */
   border: 2px solid #ccc;
   border-radius: 5px;
   padding: 10px;
