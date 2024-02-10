@@ -17,35 +17,34 @@ body {
 }
 
 .calculator {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
   padding: 20px;
-  border-radius: 30px;
-  box-shadow: 5px 5px 15px #dcdcdc,
-              -5px -5px 15px #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 #output-screen {
-  grid-column: span 4;
-  height: 70px;
-  background-color: #ffffff;
-  border: none;
-  border-radius: 20px;
-  font-size: 30px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 24px;
   text-align: right;
-  padding-right: 20px;
-  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
 }
 
 button {
-  height: 60px;
+  padding: 15px;
+  font-size: 20px;
   background-color: #ffffff;
   border: none;
-  border-radius: 30px;
-  font-size: 24px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 button:hover {
