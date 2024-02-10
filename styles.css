@@ -1,54 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  background-color: #ecf0f3;
+  font-family: sans-serif;
+}
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
-  background-color: #f0f0f0; /* Add a background color */
 }
 
 .calculator {
-  width: 90%;
-  max-width: 400px; /* Adjust max-width as needed */
-  height: 90vh; /* Set height to 90% of viewport height */
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  background-color: #f9f9f9;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.display-container {
-  display: flex;
-  justify-content: center;
-}
-
-#display {
-  width: calc(100% - 20px);
-  margin-bottom: 10px;
-  padding: 5px;
-  font-size: 20px;
-}
-
-.keys {
   display: grid;
-  grid-template-columns: repeat(4, minmax(80px, 1fr)); /* Adjust min and max width */
-  grid-gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px #dcdcdc,
+              -5px -5px 15px #ffffff;
+}
+
+#output-screen {
+  grid-column: span 4;
+  height: 70px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 30px;
+  text-align: right;
+  padding-right: 20px;
+  outline: none;
 }
 
 button {
-  padding: 20px; /* Adjust padding for button size */
-  font-size: 18px;
+  height: 60px;
+  background-color: #ffffff;
   border: none;
+  border-radius: 30px;
+  font-size: 24px;
   cursor: pointer;
-  border-radius: 5px;
-  background-color: #e0e0e0;
-  width: 100%; /* Adjust width to fill grid cell */
-  height: 60px; /* Fixed height for each button */
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #ccc;
+  background-color: #f0f0f0;
+}
+
+.equal {
+  grid-column: span 2;
 }
