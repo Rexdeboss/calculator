@@ -34,7 +34,7 @@ body {
 
 .keys {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(80px, 1fr)); /* Adjust min and max width */
   grid-gap: 5px;
 }
 
@@ -45,7 +45,7 @@ button {
   cursor: pointer;
   border-radius: 5px;
   background-color: #e0e0e0;
-  width: 100px; /* Fixed width for each button */
+  width: 100%; /* Adjust width to fill grid cell */
   height: 60px; /* Fixed height for each button */
 }
 
